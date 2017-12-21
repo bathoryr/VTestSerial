@@ -1,0 +1,297 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Czech resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CSY)
+#ifdef _WIN32
+LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\VTest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\VTest.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VTEST_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "VTest"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_PORT,16,26,48,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_SPEED,71,25,53,97,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_DATABITS,16,51,31,49,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_PARITY,49,51,43,52,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_STOPBITS,94,51,31,52,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Data Terminal Ready",IDC_DTR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,151,19,83,10
+    CONTROL         "Request To Send",IDC_RTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,151,34,72,10
+    PUSHBUTTON      "Otevøít port",IDC_PORTOPEN,263,7,50,14
+    PUSHBUTTON      "Zavøít port",IDC_PORTCLOSE,263,27,50,14,WS_DISABLED
+    CONTROL         "Zapisovat do logu",IDC_LOG,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,240,50,73,10
+    CONTROL         "Výpis jako hex. è.",IDC_HEXOUT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,242,62,71,10,WS_EX_RIGHT
+    CONTROL         "Pøidat \\r\\n",IDC_ADDNEWLINE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,257,75,56,10,WS_EX_RIGHT
+    EDITTEXT        IDC_DATA,119,91,138,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Odeslat",IDC_SEND,263,91,50,14
+    EDITTEXT        IDC_RESULT,119,111,194,82,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    GROUPBOX        "Komunikace",IDC_COMM,7,7,127,69
+    LTEXT           "Port",IDC_STATIC,16,16,14,8
+    LTEXT           "Data bity",IDC_STATIC,16,42,32,8
+    GROUPBOX        "Nastavit signály",IDC_STATIC,141,7,97,69
+    GROUPBOX        "Stav portu",IDC_STATIC,7,97,106,96
+    LTEXT           "Clear To Send",IDC_CTS,13,109,93,8
+    LTEXT           "Data Set Ready",IDC_DSR,13,123,94,8
+    LTEXT           "Ring signal",IDC_RING,13,137,91,8
+    LTEXT           "Receive Line Signal Detect",IDC_RLSD,13,151,96,8
+    LTEXT           "Error",IDC_ERROR,13,165,35,8
+    LTEXT           "Odeslat data:",IDC_STATIC,119,82,43,8
+    PUSHBUTTON      "Smazat",IDC_CLEARERR,51,164,50,9,BS_FLAT
+    EDITTEXT        IDC_ERRNO,13,178,94,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    LTEXT           "Rychlost",IDC_STATIC,71,16,28,8
+    LTEXT           "Parita",IDC_STATIC,49,42,19,8
+    LTEXT           "Stop bity",IDC_STATIC,94,42,28,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "VTest MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "VTest\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "VTest.EXE\0"
+            VALUE "ProductName", "VTest Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_VTEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_VTEST_DIALOG DLGINIT
+BEGIN
+    IDC_SPEED, 0x403, 4, 0
+0x3131, 0x0030, 
+    IDC_SPEED, 0x403, 4, 0
+0x3033, 0x0030, 
+    IDC_SPEED, 0x403, 4, 0
+0x3036, 0x0030, 
+    IDC_SPEED, 0x403, 5, 0
+0x3231, 0x3030, "\000" 
+    IDC_SPEED, 0x403, 5, 0
+0x3432, 0x3030, "\000" 
+    IDC_SPEED, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    IDC_SPEED, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_SPEED, 0x403, 6, 0
+0x3431, 0x3034, 0x0030, 
+    IDC_SPEED, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_SPEED, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    IDC_SPEED, 0x403, 6, 0
+0x3635, 0x3030, 0x0030, 
+    IDC_SPEED, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_SPEED, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_SPEED, 0x403, 7, 0
+0x3231, 0x3038, 0x3030, "\000" 
+    IDC_SPEED, 0x403, 7, 0
+0x3532, 0x3036, 0x3030, "\000" 
+    IDC_DATABITS, 0x403, 2, 0
+0x0034, 
+    IDC_DATABITS, 0x403, 2, 0
+0x0035, 
+    IDC_DATABITS, 0x403, 2, 0
+0x0036, 
+    IDC_DATABITS, 0x403, 2, 0
+0x0037, 
+    IDC_DATABITS, 0x403, 2, 0
+0x0038, 
+    IDC_PARITY, 0x403, 6, 0
+0xe18e, 0x6e64, 0x00e1, 
+    IDC_PARITY, 0x403, 5, 0
+0x7553, 0xe164, "\000" 
+    IDC_PARITY, 0x403, 6, 0
+0x694c, 0x6863, 0x00e1, 
+    IDC_PARITY, 0x403, 7, 0
+0x6e5a, 0xe861, 0x616b, "\000" 
+    IDC_PARITY, 0x403, 7, 0
+0x654d, 0x657a, 0x6172, "\000" 
+    IDC_STOPBITS, 0x403, 2, 0
+0x0031, 
+    IDC_STOPBITS, 0x403, 4, 0
+0x2e31, 0x0035, 
+    IDC_STOPBITS, 0x403, 2, 0
+0x0032, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DATA                "Mohou se použít øídící znaky:<ENQ><STX><ETX><ACK><NAK><CR><LF>, <BCC>, <xxx>."
+    IDS_CLEARERR            "Vynuluje pøíznak chyby."
+    IDS_ADDNEWLINE          "Pøidá na konec odesílaných dat <CR><LF>."
+    IDS_HEXOUT              "Výpis v hex formátu po bajtech."
+    IDS_LOG                 "Zapisuje odeslaná a pøijatá data do souboru VTest.log."
+END
+
+#endif    // Czech resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\VTest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
